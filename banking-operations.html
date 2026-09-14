@@ -1716,115 +1716,171 @@
 
         </section>
 
+<!-- =====================================================
+     FINDINGS, IMPLICATIONS & RECOMMENDATIONS
+====================================================== -->
 
-        <!-- =====================================================
-             RECOMMENDATIONS
-        ====================================================== -->
+<section id="insights"
+         class="banking-section banking-section-alt banking-insights-section">
 
-        <section id="recommendations" class="banking-section banking-section-alt">
+    <div class="inner">
 
-            <div class="inner">
+        <div class="banking-section-heading">
+
+            <span class="banking-section-label">
+                FINDINGS &amp; MANAGEMENT ACTION
+            </span>
+
+            <h2>
+                What the analysis revealed
+            </h2>
+
+            <p>
+                The report moves beyond headline totals to identify changes,
+                concentrations and exceptions requiring management attention.
+            </p>
+
+        </div>
 
 
-                <div class="banking-section-heading">
+        <div class="banking-insight-grid">
 
-                    <span class="banking-section-label">
-                        MANAGEMENT RECOMMENDATIONS
-                    </span>
+            <article class="banking-insight-card">
 
-                    <h2>
-                        What management should monitor next
-                    </h2>
+                <span class="banking-insight-number">01</span>
 
+                <h3>Transaction momentum weakened</h3>
+
+                <p>
+                    Transaction value remained broadly stable between 2020 and
+                    2022 but declined by 1.8% in 2023 to approximately
+                    &pound;28.8 million.
+                </p>
+
+                <div class="banking-insight-implication">
+                    <strong>Business implication</strong>
                     <p>
-                        The analysis identifies areas that warrant continued
-                        monitoring rather than unsupported causal conclusions.
+                        Management should investigate the branches, customer
+                        segments and transaction types responsible for the
+                        reduction before it develops into a sustained trend.
                     </p>
-
                 </div>
 
-
-                <div class="banking-recommendation-grid">
-
-
-                    <article>
-
-                        <span>01</span>
-
-                        <h3>
-                            Monitor the 2023 transaction decline
-                        </h3>
-
-                        <p>
-                            Transaction value fell by 1.8% in 2023. This is not
-                            large enough to establish deterioration, but future
-                            complete periods should be monitored to determine
-                            whether the decline persists.
-                        </p>
-
-                    </article>
+            </article>
 
 
-                    <article>
+            <article class="banking-insight-card">
 
-                        <span>02</span>
+                <span class="banking-insight-number">02</span>
 
-                        <h3>
-                            Track overdue exposure by both value and severity
-                        </h3>
+                <h3>Overdue exposure is material</h3>
 
-                        <p>
-                            Large Enterprise has the highest total overdue
-                            exposure, while Small Business has the highest
-                            average overdue loan value. Both measures should be
-                            retained in credit monitoring.
-                        </p>
+                <p>
+                    Overdue lending totalled approximately &pound;1.67 million,
+                    representing 9.8% of the &pound;17.09 million loan portfolio.
+                </p>
 
-                    </article>
-
-
-                    <article>
-
-                        <span>03</span>
-
-                        <h3>
-                            Retain customer-without-account visibility
-                        </h3>
-
-                        <p>
-                            Customers without linked accounts should remain
-                            visible rather than being removed through inner
-                            joins, as this may identify dormant, incomplete or
-                            conversion opportunities for further investigation.
-                        </p>
-
-                    </article>
-
-
-                    <article>
-
-                        <span>04</span>
-
-                        <h3>
-                            Preserve reporting-grain controls
-                        </h3>
-
-                        <p>
-                            Account, transaction and loan measures should
-                            continue to be calculated at their correct source
-                            grain before cross-table analysis to prevent
-                            inflated management totals.
-                        </p>
-
-                    </article>
-
+                <div class="banking-insight-implication">
+                    <strong>Business implication</strong>
+                    <p>
+                        Credit monitoring and recovery activity should be treated
+                        as a management priority rather than a routine reporting
+                        exception.
+                    </p>
                 </div>
+
+            </article>
+
+
+            <article class="banking-insight-card">
+
+                <span class="banking-insight-number">03</span>
+
+                <h3>Risk is concentrated in Large Enterprise</h3>
+
+                <p>
+                    Large Enterprise customers held the highest total overdue
+                    exposure at approximately &pound;632,000.
+                </p>
+
+                <div class="banking-insight-implication">
+                    <strong>Business implication</strong>
+                    <p>
+                        A relatively concentrated exposure means that deterioration
+                        in a small number of large accounts could materially affect
+                        overall portfolio quality.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="banking-insight-card">
+
+                <span class="banking-insight-number">04</span>
+
+                <h3>Small Business carries higher account-level risk</h3>
+
+                <p>
+                    Small Business customers recorded the highest average overdue
+                    loan value at approximately &pound;59,000.
+                </p>
+
+                <div class="banking-insight-implication">
+                    <strong>Business implication</strong>
+                    <p>
+                        Total exposure alone would understate the significance of
+                        individual Small Business facilities, making account-level
+                        review necessary.
+                    </p>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="banking-recommendation-panel">
+
+            <div>
+
+                <span class="banking-section-label">
+                    RECOMMENDED ACTIONS
+                </span>
+
+                <h3>
+                    Turning the findings into management priorities
+                </h3>
 
             </div>
 
-        </section>
+            <ol>
+                <li>
+                    Analyse the 2023 transaction decline by branch, customer
+                    segment and transaction type to isolate the underlying drivers.
+                </li>
 
+                <li>
+                    Prioritise Large Enterprise accounts for exposure monitoring,
+                    repayment engagement and recovery planning.
+                </li>
 
+                <li>
+                    Review individual Small Business facilities because of their
+                    comparatively high average overdue value.
+                </li>
+
+                <li>
+                    Monitor active, paid-off and overdue lending through a recurring
+                    management-control report with defined escalation thresholds.
+                </li>
+            </ol>
+
+        </div>
+
+    </div>
+
+</section>
         <!-- =====================================================
              BUSINESS OUTCOMES
         ====================================================== -->

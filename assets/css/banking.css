@@ -7620,3 +7620,345 @@ body.banking-page #menu .banking-download-btn:hover
 .banking-download-icon {
     transform: translateY(2px);
 }
+/* =====================================================
+   FINDINGS, IMPLICATIONS & RECOMMENDATIONS
+===================================================== */
+
+.banking-insights-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.banking-insights-section::before {
+    content: "";
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    width: 420px;
+    height: 420px;
+    border: 1px solid rgba(10, 129, 120, 0.12);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.banking-insights-section .inner {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Section introduction */
+
+.banking-insights-section .banking-section-heading {
+    max-width: 850px;
+    margin-bottom: 3rem;
+}
+
+.banking-insights-section .banking-section-heading > p {
+    max-width: 760px;
+    margin: 1rem 0 0;
+    color: var(--text-soft);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+
+/* Findings grid */
+
+.banking-insight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+
+/* Individual finding */
+
+.banking-insight-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 12px 30px rgba(16, 33, 63, 0.06);
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.banking-insight-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 54px;
+    height: 3px;
+    background: linear-gradient(
+        90deg,
+        var(--teal),
+        var(--green)
+    );
+}
+
+.banking-insight-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(10, 129, 120, 0.32);
+    box-shadow: 0 18px 42px rgba(16, 33, 63, 0.1);
+}
+
+
+/* Finding number */
+
+.banking-insight-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 1.35rem;
+    color: var(--teal);
+    background: var(--teal-soft);
+    border-radius: 12px;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+}
+
+
+/* Finding text */
+
+.banking-insight-card > h3 {
+    margin: 0 0 0.85rem;
+    color: var(--navy);
+    font-family: "Manrope", sans-serif;
+    font-size: 1.18rem;
+    font-weight: 750;
+    line-height: 1.35;
+    letter-spacing: -0.02em;
+}
+
+.banking-insight-card > p {
+    margin: 0;
+    color: var(--text-soft);
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+
+/* Business implication */
+
+.banking-insight-implication {
+    margin-top: 1.5rem;
+    padding: 1.15rem 1.2rem;
+    background: var(--mint-section);
+    border-left: 3px solid var(--teal-mid);
+    border-radius: 0 var(--radius-small) var(--radius-small) 0;
+}
+
+.banking-insight-implication strong {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: var(--teal);
+    font-family: "Manrope", sans-serif;
+    font-size: 0.69rem;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.banking-insight-implication p {
+    margin: 0;
+    color: var(--text);
+    font-size: 0.87rem;
+    line-height: 1.65;
+}
+
+
+/* Recommendation panel */
+
+.banking-recommendation-panel {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.4fr);
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2.25rem;
+    padding: 2.75rem;
+    color: var(--white);
+    background:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(22, 151, 141, 0.2),
+            transparent 35%
+        ),
+        var(--navy-dark);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-large);
+    box-shadow: 0 20px 48px rgba(11, 25, 51, 0.16);
+}
+
+.banking-recommendation-panel .banking-section-label {
+    color: var(--green);
+}
+
+.banking-recommendation-panel h3 {
+    max-width: 430px;
+    margin: 0.8rem 0 0;
+    color: var(--white);
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(1.45rem, 2vw, 2rem);
+    font-weight: 750;
+    line-height: 1.25;
+    letter-spacing: -0.035em;
+}
+
+
+/* Recommendation list */
+
+.banking-recommendation-panel ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: banking-actions;
+}
+
+.banking-recommendation-panel li {
+    position: relative;
+    min-height: 42px;
+    margin: 0;
+    padding: 0 0 1.2rem 3.5rem;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.93rem;
+    line-height: 1.65;
+    counter-increment: banking-actions;
+}
+
+.banking-recommendation-panel li:not(:last-child) {
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.banking-recommendation-panel li::before {
+    content: counter(banking-actions, decimal-leading-zero);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: var(--green);
+    background: rgba(139, 209, 70, 0.1);
+    border: 1px solid rgba(139, 209, 70, 0.24);
+    border-radius: 10px;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+}
+
+.banking-recommendation-panel li:last-child {
+    padding-bottom: 0;
+}
+
+
+/* Tablet */
+
+@media screen and (max-width: 980px) {
+
+    .banking-insight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banking-recommendation-panel {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .banking-recommendation-panel h3 {
+        max-width: 650px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 640px) {
+
+    .banking-insights-section .banking-section-heading {
+        margin-bottom: 2rem;
+    }
+
+    .banking-insight-grid {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    .banking-insight-card {
+        padding: 1.5rem;
+        border-radius: var(--radius-small);
+    }
+
+    .banking-insight-card > h3 {
+        font-size: 1.05rem;
+    }
+
+    .banking-insight-implication {
+        margin-top: 1.2rem;
+        padding: 1rem;
+    }
+
+    .banking-recommendation-panel {
+        gap: 1.75rem;
+        margin-top: 1.5rem;
+        padding: 1.6rem;
+        border-radius: var(--radius);
+    }
+
+    .banking-recommendation-panel h3 {
+        font-size: 1.35rem;
+    }
+
+    .banking-recommendation-panel li {
+        padding-left: 3rem;
+        font-size: 0.88rem;
+    }
+
+}
+
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .banking-insight-card {
+        transition: none;
+    }
+
+    .banking-insight-card:hover {
+        transform: none;
+    }
+
+}
+.banking-recommendation-panel > div > h3 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff;
+}
+.banking-page
+.banking-insights-section
+.banking-recommendation-panel
+> div
+> h3 {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    opacity: 1 !important;
+}
