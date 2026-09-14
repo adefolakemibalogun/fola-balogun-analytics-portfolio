@@ -2567,3 +2567,15 @@ html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
 }
+/* Make each project card fully clickable */
+.hp-project {
+    position: relative;
+    cursor: pointer;
+}
+
+.hp-project-link::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
