@@ -1,0 +1,2070 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+    <title>Banking Operations & Portfolio Performance | Fola Balogun</title>
+
+    <meta charset="utf-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+
+    <meta
+        name="description"
+        content="Banking Operations and Portfolio Performance case study using MySQL, Excel, Power Query and management information reporting."
+    />
+
+    <link
+        rel="stylesheet"
+        href="assets/css/banking.css"
+    />
+
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="assets/css/noscript.css"
+        />
+    </noscript>
+
+</head>
+
+
+<body class="is-preload banking-page">
+
+
+    <!-- =========================================================
+         HEADER
+    ========================================================== -->
+
+    <header id="header">
+
+        <a href="index.html" class="logo">
+            FB
+        </a>
+
+        <nav>
+            <a href="#menu">
+                Menu
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
+
+    <nav id="menu">
+
+        <ul class="links">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#projects">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#about">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+<nav id="menu">
+
+    <ul class="links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+
+    <!-- PROJECT DOWNLOAD -->
+    <div class="banking-menu-download">
+
+        <span>PROJECT FILE</span>
+
+        <a href="Files/banking-operations-mi.xlsx"
+           download
+           class="banking-download-btn">
+
+            <span class="banking-download-icon">↓</span>
+
+            <span>
+                <strong>Download Excel Report</strong>
+                <small>Management Information Workbook · XLSX</small>
+            </span>
+
+        </a>
+
+    </div>
+
+</nav>
+    </nav>
+
+
+    <!-- =========================================================
+         WRAPPER
+    ========================================================== -->
+
+    <div id="wrapper">
+
+
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="banking-hero">
+
+            <div class="inner">
+
+                <div class="banking-hero-grid">
+
+
+                    <div class="banking-hero-copy">
+
+                        <span class="banking-eyebrow">
+                            BANKING OPERATIONS · MANAGEMENT INFORMATION
+                        </span>
+
+                        <h1>
+                            Banking Operations &amp;
+                            Portfolio Performance
+                        </h1>
+
+                        <p class="banking-hero-lead">
+                            An end-to-end banking analytics project using MySQL,
+                            Excel and Power Query to validate source data,
+                            create a controlled analytical layer and translate
+                            operational, portfolio and credit information into
+                            management-ready insight.
+                        </p>
+
+
+                        <div class="banking-hero-meta">
+
+                            <span>MySQL</span>
+
+                            <span>Excel</span>
+
+                            <span>Power Query</span>
+
+                            <span>Management Information</span>
+
+                            <span>Portfolio Analysis</span>
+
+                        </div>
+
+                    </div>
+
+
+<!-- HERO VISUAL -->
+<div class="banking-hero-visual">
+
+    <img
+        src="images/banking-hero.png"
+        alt="Modern banking building representing the Banking Operations and Portfolio Performance project"
+        class="banking-hero-image"
+    />
+
+    <div class="banking-hero-quote">
+        <span class="banking-quote-mark">“</span>
+
+        <p>
+            Turning complex banking data into clear,
+            reliable insights that support better decisions.
+        </p>
+
+        <span class="banking-quote-signature">
+            DATA · INSIGHTS · IMPACT
+        </span>
+    </div>
+
+</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             EXECUTIVE PROJECT SUMMARY
+        ====================================================== -->
+
+        <section id="project-summary" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        PROJECT SUMMARY
+                    </span>
+
+                    <h2>
+                        Turning fragmented banking data into
+                        controlled management information
+                    </h2>
+
+                    <p>
+                        The project was designed around a practical management
+                        problem. How to produce a reliable view of banking
+                        activity when source data contains duplicates, missing
+                        dates, multiple entity types and different reporting
+                        grains.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-summary-grid">
+
+                    <article>
+
+                        <span>1,100</span>
+
+                        <h3>Customers</h3>
+
+                        <p>
+                            Clean customer population after removing verified
+                            duplicate customer records.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>1,651</span>
+
+                        <h3>Accounts</h3>
+
+                        <p>
+                            Clean account base used for portfolio and balance
+                            analysis.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>£81.04M</span>
+
+                        <h3>Account Balance</h3>
+
+                        <p>
+                            Total balance calculated at account grain to avoid
+                            duplication through transaction joins.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>£117.13M</span>
+
+                        <h3>Transaction Value</h3>
+
+                        <p>
+                            Comparable transaction value across the selected
+                            2020–2023 reporting period.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>£17.09M</span>
+
+                        <h3>Loan Portfolio</h3>
+
+                        <p>
+                            Total principal value across the clean loan
+                            population.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>£1.67M</span>
+
+                        <h3>Overdue Exposure</h3>
+
+                        <p>
+                            Overdue loan principal representing approximately
+                            9.8% of total loan value.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BUSINESS CONTEXT
+        ====================================================== -->
+
+        <section id="business-context" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-two-column">
+
+
+                    <div>
+
+                        <span class="banking-section-label">
+                            BUSINESS CONTEXT
+                        </span>
+
+                        <h2>
+                            A management view across customers,
+                            accounts, transactions and credit
+                        </h2>
+
+                        <p>
+                            The source data represented multiple parts of a
+                            banking operating environment, including customers,
+                            accounts, transactions, loans, branches and
+                            supporting reference tables.
+                        </p>
+
+                        <p>
+                            The analytical challenge was not simply to calculate
+                            totals. Management needed a controlled view that
+                            could answer operational and portfolio questions
+                            without overstating balances, mixing incomplete
+                            periods or confusing overdue exposure with default.
+                        </p>
+
+                    </div>
+
+
+                    <div class="banking-question-panel">
+
+                        <span class="banking-question-label">
+                            KEY BUSINESS QUESTIONS
+                        </span>
+
+                        <ol>
+
+                            <li>
+                                What is the size and composition of the
+                                customer and account portfolio?
+                            </li>
+
+                            <li>
+                                How has transaction value changed over the
+                                comparable reporting period?
+                            </li>
+
+                            <li>
+                                Which transaction types contribute most to
+                                banking activity?
+                            </li>
+
+                            <li>
+                                What is the value and status mix of the loan
+                                portfolio?
+                            </li>
+
+                            <li>
+                                Where is overdue exposure concentrated?
+                            </li>
+
+                            <li>
+                                Is branch transaction activity concentrated in
+                                a small number of locations?
+                            </li>
+
+                            <li>
+                                Can the reporting logic be made reusable and
+                                controlled for management reporting?
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DATA ENVIRONMENT
+        ====================================================== -->
+
+        <section id="data-environment" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        DATA ENVIRONMENT
+                    </span>
+
+                    <h2>
+                        Understanding the source structure before analysis
+                    </h2>
+
+                    <p>
+                        The source consisted of transactional and reference
+                        tables rather than one flat analytical file. This meant
+                        that entity relationships and reporting grain had to be
+                        understood before calculating management measures.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-data-grid">
+
+                    <article>
+
+                        <h3>Core Entities</h3>
+
+                        <p>
+                            Customers, accounts, loans and transactions formed
+                            the primary analytical population.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Reference Data</h3>
+
+                        <p>
+                            Customer type, account type, account status, loan
+                            status, transaction type and branch tables were
+                            used to interpret coded identifiers.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Different Grains</h3>
+
+                        <p>
+                            Customer, account, loan and transaction tables exist
+                            at different levels of detail, creating a risk of
+                            double counting if joins are not controlled.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Reporting Period</h3>
+
+                        <p>
+                            2020–2023 was selected as the comparable period
+                            because later years were materially incomplete and
+                            would distort trend interpretation.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             DATA QUALITY & REPORTING CONTROLS
+        ====================================================== -->
+
+        <section id="data-reliability" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        DATA QUALITY &amp; REPORTING CONTROLS
+                    </span>
+
+                    <h2>
+                        Testing the data before trusting the numbers
+                    </h2>
+
+                    <p>
+                        Data-quality checks were performed before management
+                        measures were produced. The objective was to quantify
+                        defects, reconcile the clean population and reduce the
+                        risk of invalid management totals.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-reconciliation-layout">
+
+
+                    <div class="banking-reconciliation-table">
+
+                        <div class="banking-table-row banking-table-head">
+
+                            <span>Dataset</span>
+
+                            <span>Raw</span>
+
+                            <span>Clean</span>
+
+                            <span>Control Finding</span>
+
+                        </div>
+
+
+                        <div class="banking-table-row">
+
+                            <strong>Transactions</strong>
+
+                            <span>50,000</span>
+
+                            <span>48,500</span>
+
+                            <p>
+                                500 duplicate transaction IDs and 1,000 records
+                                with missing or unusable transaction dates.
+                            </p>
+
+                        </div>
+
+
+                        <div class="banking-table-row">
+
+                            <strong>Customers</strong>
+
+                            <span>1,111</span>
+
+                            <span>1,100</span>
+
+                            <p>
+                                11 verified duplicate customer records removed.
+                            </p>
+
+                        </div>
+
+
+                        <div class="banking-table-row">
+
+                            <strong>Accounts</strong>
+
+                            <span>1,667</span>
+
+                            <span>1,651</span>
+
+                            <p>
+                                16 duplicate account records removed and
+                                balances standardised as numeric.
+                            </p>
+
+                        </div>
+
+
+                        <div class="banking-table-row">
+
+                            <strong>Loans</strong>
+
+                            <span>333</span>
+
+                            <span>330</span>
+
+                            <p>
+                                3 duplicate loan records removed and principal
+                                amounts prepared for analysis.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="banking-control-stack">
+
+
+                        <article>
+
+                            <span>CONTROL 01</span>
+
+                            <h3>Referential Integrity</h3>
+
+                            <p>
+                                Customer, account, loan and transaction
+                                relationships were tested for orphan records.
+                                No orphan relationships were identified in the
+                                tested keys.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <span>CONTROL 02</span>
+
+                            <h3>Reporting Grain</h3>
+
+                            <p>
+                                Account balances were calculated directly from
+                                the account table rather than after joining to
+                                transaction-level records.
+                            </p>
+
+                            <p>
+                                This prevented one-to-many transaction joins
+                                from multiplying balances and overstating the
+                                portfolio.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <span>CONTROL 03</span>
+
+                            <h3>Comparable Period</h3>
+
+                            <p>
+                                2020–2023 was retained for trend reporting
+                                because 2024 onward contained materially fewer
+                                observations and was unsuitable for like-for-like
+                                comparison.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <div class="banking-evidence-grid">
+
+
+                    <div class="banking-evidence-copy">
+
+                        <span class="banking-evidence-label">
+                            QUALITY EVIDENCE
+                        </span>
+
+                        <h3>
+                            Reconciliation checks quantified the impact of
+                            cleaning decisions
+                        </h3>
+
+                        <p>
+                            The SQL reconciliation output provided an auditable
+                            bridge between raw and clean populations, showing
+                            exactly how many records were removed and why.
+                        </p>
+
+                        <div class="banking-finding-callout">
+
+                            <strong>Why this matters</strong>
+
+                            <p>
+                                Management KPIs are only useful if the
+                                underlying population is controlled. Performing
+                                these checks before aggregation reduced the risk
+                                of hidden data-quality errors inside reported
+                                totals.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <figure class="banking-evidence-figure">
+
+                        <img
+                            src="images/banking-sql-quality.png"
+                            alt="MySQL data quality reconciliation showing raw and clean record counts"
+                        />
+
+                        <figcaption>
+                            Raw-to-clean reconciliation across transactions,
+                            customers, accounts and loans.
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             SQL ANALYTICAL LAYER
+        ====================================================== -->
+
+        <section id="sql-controls" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        ANALYTICAL LAYER &amp; SQL
+                    </span>
+
+                    <h2>
+                        Separating analytical logic from presentation
+                    </h2>
+
+                    <p>
+                        MySQL was used as the control layer between source data
+                        and Excel reporting. Clean analytical tables and
+                        reusable reporting views were created so the same
+                        management logic could be consumed consistently rather
+                        than rebuilt manually in spreadsheets.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-process-strip">
+
+                    <article>
+                        <span>01</span>
+                        <h3>Ingest</h3>
+                        <p>Load source tables while preserving the raw layer.</p>
+                    </article>
+
+                    <article>
+                        <span>02</span>
+                        <h3>Profile</h3>
+                        <p>Assess duplicates, nulls, coverage and row counts.</p>
+                    </article>
+
+                    <article>
+                        <span>03</span>
+                        <h3>Validate</h3>
+                        <p>Check entity relationships and reporting grain.</p>
+                    </article>
+
+                    <article>
+                        <span>04</span>
+                        <h3>Clean</h3>
+                        <p>Create validated analytical tables.</p>
+                    </article>
+
+                    <article>
+                        <span>05</span>
+                        <h3>Aggregate</h3>
+                        <p>Calculate measures at the correct grain.</p>
+                    </article>
+
+                    <article>
+                        <span>06</span>
+                        <h3>Publish</h3>
+                        <p>Create reusable reporting views for Excel.</p>
+                    </article>
+
+                </div>
+
+
+                <div class="banking-view-grid">
+
+
+                    <article>
+
+                        <span>EXECUTIVE PORTFOLIO</span>
+
+                        <h3>vw_executive_portfolio</h3>
+
+                        <p>
+                            Consolidated customers, accounts, account balance,
+                            comparable transaction activity, total loan value
+                            and overdue exposure into one management output.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>CUSTOMER PORTFOLIO</span>
+
+                        <h3>vw_customer_portfolio</h3>
+
+                        <p>
+                            Combined customer type with account product,
+                            account status, balance and opening date while
+                            preserving customers without an associated account.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>MANAGEMENT ANALYSIS</span>
+
+                        <h3>Operational &amp; Credit Views</h3>
+
+                        <p>
+                            Reusable outputs were created for transaction trend,
+                            transaction type, branch activity, loan status and
+                            overdue exposure by customer segment.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="banking-evidence-grid banking-evidence-grid-reverse">
+
+
+                    <figure class="banking-evidence-figure">
+
+                        <img
+                            src="images/banking-sql-reporting-view.png"
+                            alt="MySQL executive portfolio reporting view and result set"
+                        />
+
+                        <figcaption>
+                            Executive reporting view consolidating management
+                            KPIs from validated analytical tables.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <div class="banking-evidence-copy">
+
+                        <span class="banking-evidence-label">
+                            REPORTING VIEW
+                        </span>
+
+                        <h3>
+                            Core KPIs were calculated upstream rather than
+                            independently in Excel
+                        </h3>
+
+                        <p>
+                            This reduced manual calculation risk and created a
+                            reusable source for downstream management reporting.
+                        </p>
+
+
+                        <div class="banking-mini-metrics">
+
+                            <div>
+                                <strong>1,100</strong>
+                                <span>Customers</span>
+                            </div>
+
+                            <div>
+                                <strong>1,651</strong>
+                                <span>Accounts</span>
+                            </div>
+
+                            <div>
+                                <strong>£81.04M</strong>
+                                <span>Balance</span>
+                            </div>
+
+                            <div>
+                                <strong>£117.13M</strong>
+                                <span>Transaction Value</span>
+                            </div>
+
+                        </div>
+
+
+                        <div class="banking-finding-callout">
+
+                            <strong>Analytical control</strong>
+
+                            <p>
+                                The SQL layer separated source records,
+                                cleaning logic, aggregation and presentation,
+                                making the reporting process more traceable and
+                                reusable.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CUSTOMER & ACCOUNT PORTFOLIO
+        ====================================================== -->
+
+        <section id="portfolio-analysis" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        CUSTOMER &amp; ACCOUNT PORTFOLIO
+                    </span>
+
+                    <h2>
+                        How is the portfolio structured?
+                    </h2>
+
+                    <p>
+                        Portfolio analysis focused on the distribution of
+                        account balances across customer segments and account
+                        products, supported by account-status analysis.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-analysis-layout">
+
+
+                    <div class="banking-analysis-primary">
+
+                        <article>
+
+                            <span class="banking-analysis-index">
+                                01
+                            </span>
+
+                            <h3>
+                                Large Enterprise holds the highest total
+                                account balance
+                            </h3>
+
+                            <p>
+                                Large Enterprise customers held approximately
+                                £28.61M in account balances, ahead of Small
+                                Business at £26.52M and Individual customers at
+                                £25.91M.
+                            </p>
+
+                            <p>
+                                The balance distribution is relatively broad,
+                                but the Large Enterprise segment represents the
+                                largest single concentration of account value.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <span class="banking-analysis-index">
+                                02
+                            </span>
+
+                            <h3>
+                                Product balances are relatively evenly spread
+                            </h3>
+
+                            <p>
+                                Business, Savings, Youth, Payroll and Checking
+                                accounts each contribute materially to the
+                                balance base, with no single product dominating
+                                the portfolio.
+                            </p>
+
+                            <p>
+                                This reduces dependence on one account product,
+                                although segment-level performance should still
+                                be monitored alongside product mix.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <span class="banking-analysis-index">
+                                03
+                            </span>
+
+                            <h3>
+                                Customers without accounts were deliberately
+                                retained
+                            </h3>
+
+                            <p>
+                                The customer portfolio view used a left join so
+                                that customers without linked accounts remained
+                                visible rather than being silently excluded.
+                            </p>
+
+                            <p>
+                                In Power Query, missing account categories were
+                                labelled as <strong>No Account</strong> to make
+                                this population interpretable in the final
+                                report.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <aside class="banking-management-implication">
+
+                        <span>
+                            MANAGEMENT IMPLICATION
+                        </span>
+
+                        <p>
+                            Portfolio value is diversified across customer and
+                            product groups, but Large Enterprise customers
+                            represent the largest balance concentration and
+                            should remain visible in customer-segment
+                            monitoring.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             TRANSACTION ANALYSIS
+        ====================================================== -->
+
+        <section id="transaction-analysis" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        TRANSACTION PERFORMANCE
+                    </span>
+
+                    <h2>
+                        Is banking activity stable, growing or declining?
+                    </h2>
+
+                    <p>
+                        Transaction analysis was restricted to the comparable
+                        2020–2023 period to avoid interpreting incomplete later
+                        years as genuine operational decline.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-highlight-grid">
+
+                    <article>
+
+                        <span>2020</span>
+
+                        <strong>£29.57M</strong>
+
+                        <p>
+                            Comparable transaction value.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>2021</span>
+
+                        <strong>£29.34M</strong>
+
+                        <p>
+                            Broadly stable versus the prior year.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>2022</span>
+
+                        <strong>£29.38M</strong>
+
+                        <p>
+                            Transaction value remained stable.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>2023</span>
+
+                        <strong>£28.84M</strong>
+
+                        <p>
+                            1.8% decline versus 2022.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="banking-analysis-layout">
+
+
+                    <div class="banking-analysis-primary">
+
+                        <article>
+
+                            <h3>
+                                Transaction value remained broadly stable
+                            </h3>
+
+                            <p>
+                                Annual transaction value remained within a
+                                relatively narrow range of approximately
+                                £28.8M–£29.6M from 2020 to 2023.
+                            </p>
+
+                            <p>
+                                The 2023 decline of 1.8% is modest and should be
+                                monitored, but the data does not support a claim
+                                of structural deterioration.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <h3>
+                                Deposits, transfers and withdrawals contribute
+                                similar levels of value
+                            </h3>
+
+                            <p>
+                                Deposit value was £37.65M, Transfer £37.18M and
+                                Withdrawal £36.74M across the comparable
+                                period.
+                            </p>
+
+                            <p>
+                                Payments were materially lower at £12.38M,
+                                indicating a different contribution profile
+                                within the transaction mix.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <aside class="banking-management-implication">
+
+                        <span>
+                            MANAGEMENT IMPLICATION
+                        </span>
+
+                        <p>
+                            Transaction activity is stable overall. The key
+                            management question is therefore not immediate
+                            volume deterioration, but whether the modest 2023
+                            decline persists in subsequent complete periods.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             CREDIT ANALYSIS
+        ====================================================== -->
+
+        <section id="credit-analysis" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        CREDIT PERFORMANCE
+                    </span>
+
+                    <h2>
+                        Where is overdue exposure concentrated?
+                    </h2>
+
+                    <p>
+                        Credit analysis focused on portfolio status and overdue
+                        principal exposure. Overdue was treated as a reporting
+                        status and was not interpreted as default.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-credit-grid">
+
+
+                    <article>
+
+                        <span>ACTIVE</span>
+
+                        <strong>£12.41M</strong>
+
+                        <p>
+                            239 active loans representing approximately 73% of
+                            total loan value.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>PAID OFF</span>
+
+                        <strong>£3.00M</strong>
+
+                        <p>
+                            57 paid-off loans representing approximately 17% of
+                            portfolio value.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>OVERDUE</span>
+
+                        <strong>£1.67M</strong>
+
+                        <p>
+                            34 overdue loans representing approximately 9.8% of
+                            total loan value.
+                        </p>
+
+                    </article>
+
+                </div>
+
+
+                <div class="banking-analysis-layout">
+
+
+                    <div class="banking-analysis-primary">
+
+                        <article>
+
+                            <h3>
+                                Large Enterprise holds the highest overdue
+                                exposure
+                            </h3>
+
+                            <p>
+                                Large Enterprise customers represented
+                                approximately £623K of overdue principal,
+                                compared with £532K for Small Business and
+                                £515K for Individuals.
+                            </p>
+
+                        </article>
+
+
+                        <article>
+
+                            <h3>
+                                Small Business carries the highest average
+                                overdue loan
+                            </h3>
+
+                            <p>
+                                Although Large Enterprise has the highest total
+                                overdue exposure, Small Business has the highest
+                                average overdue loan value at approximately
+                                £59K.
+                            </p>
+
+                            <p>
+                                This distinction matters because total exposure
+                                and average case severity answer different risk
+                                questions.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <aside class="banking-management-implication">
+
+                        <span>
+                            MANAGEMENT IMPLICATION
+                        </span>
+
+                        <p>
+                            Credit monitoring should consider both total
+                            exposure and average overdue case size. Large
+                            Enterprise requires attention because of total value
+                            at risk, while Small Business warrants attention
+                            because of higher average overdue severity.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BRANCH ANALYSIS
+        ====================================================== -->
+
+        <section id="branch-analysis" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        BRANCH PERFORMANCE
+                    </span>
+
+                    <h2>
+                        Is transaction activity concentrated in a small
+                        number of branches?
+                    </h2>
+
+                    <p>
+                        Branch analysis compared transaction value across the
+                        highest-performing branches to assess whether the
+                        activity profile was heavily concentrated.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-analysis-layout">
+
+
+                    <div class="banking-analysis-primary">
+
+                        <article>
+
+                            <h3>
+                                Top branch performance is relatively tightly
+                                distributed
+                            </h3>
+
+                            <p>
+                                The top 10 branches each generated approximately
+                                £2.6M–£2.7M in transaction value.
+                            </p>
+
+                            <p>
+                                The narrow spread indicates that no single
+                                branch dominates transaction activity among the
+                                leading performers.
+                            </p>
+
+                        </article>
+
+                    </div>
+
+
+                    <aside class="banking-management-implication">
+
+                        <span>
+                            MANAGEMENT IMPLICATION
+                        </span>
+
+                        <p>
+                            The top-performing branch base is relatively
+                            balanced. Management should therefore monitor
+                            sustained branch-level changes rather than treating
+                            one location as a dominant concentration risk.
+                        </p>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             POWER QUERY / REPORTING PREPARATION
+        ====================================================== -->
+
+        <section id="reporting-preparation" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        REPORTING PREPARATION
+                    </span>
+
+                    <h2>
+                        Translating controlled SQL outputs into
+                        management friendly reporting fields
+                    </h2>
+
+                    <p>
+                        Power Query was used as the preparation layer between
+                        SQL and the final Excel report, including business-facing
+                        labels required for interpretation.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-evidence-grid">
+
+
+                    <figure class="banking-evidence-figure">
+
+                        <img
+                            src="images/banking-power-query.png"
+                            alt="Power Query transformation creating Account Type Display and No Account category"
+                        />
+
+                        <figcaption>
+                            Power Query transformation used to label missing
+                            account categories as “No Account”.
+                        </figcaption>
+
+                    </figure>
+
+
+                    <div class="banking-evidence-copy">
+
+                        <span class="banking-evidence-label">
+                            REPORTING LOGIC
+                        </span>
+
+                        <h3>
+                            Preserving customers without linked accounts
+                        </h3>
+
+                        <p>
+                            Customers without account records were retained in
+                            the analytical population through a left join.
+                            Instead of leaving the resulting account type as a
+                            null value, Power Query converted it to the
+                            management-readable category <strong>No Account</strong>.
+                        </p>
+
+                        <div class="banking-finding-callout">
+
+                            <strong>Why this matters</strong>
+
+                            <p>
+                                Replacing null with a meaningful reporting label
+                                prevents users from interpreting missing values
+                                as data errors and makes the retained customer
+                                population explicit in the final report.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             MANAGEMENT INFORMATION REPORT
+        ====================================================== -->
+
+        <section id="management-report" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        MANAGEMENT INFORMATION REPORT
+                    </span>
+
+                    <h2>
+                        Translating analysis into decision-ready
+                        management views
+                    </h2>
+
+                    <p>
+                        The final Excel report was structured into one executive
+                        page and two supporting analytical views so management
+                        could move from headline portfolio performance into
+                        customer, operational and credit detail.
+                    </p>
+
+                </div>
+
+
+                <!-- EXECUTIVE VIEW -->
+
+                <div class="banking-report-primary">
+
+
+                    <div class="banking-report-copy">
+
+                        <span>PAGE 01 · EXECUTIVE VIEW</span>
+
+                        <h3>
+                            Banking Operations &amp;
+                            Portfolio Performance
+                        </h3>
+
+                        <p>
+                            The executive page consolidates the core portfolio
+                            position across customers, accounts, transaction
+                            value, loan exposure and overdue value, supported by
+                            annual transaction trend and loan-status mix.
+                        </p>
+
+                    </div>
+
+
+                    <figure>
+
+                        <img
+                            src="images/banking-page-1.png"
+                            alt="Banking Operations and Portfolio Performance executive management information report"
+                        />
+
+                    </figure>
+
+                </div>
+
+
+                <!-- SUPPORTING VIEWS -->
+
+                <div class="banking-report-supporting">
+
+
+                    <article>
+
+                        <figure>
+
+                            <img
+                                src="images/banking-page-2.png"
+                                alt="Customer and Account Portfolio report page"
+                            />
+
+                        </figure>
+
+                        <div>
+
+                            <span>PAGE 02 · PORTFOLIO ANALYSIS</span>
+
+                            <h3>
+                                Customer &amp; Account Portfolio
+                            </h3>
+
+                            <p>
+                                Provides deeper analysis of account balances by
+                                customer segment and product type, supported by
+                                account status and interactive filtering.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article>
+
+                        <figure>
+
+                            <img
+                                src="images/banking-page-3.png"
+                                alt="Operations and Credit Performance report page"
+                            />
+
+                        </figure>
+
+                        <div>
+
+                            <span>PAGE 03 · OPERATIONS &amp; CREDIT</span>
+
+                            <h3>
+                                Operations &amp; Credit Performance
+                            </h3>
+
+                            <p>
+                                Combines transaction mix, branch activity, loan
+                                status and overdue exposure into one operational
+                                and credit-monitoring view.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="banking-reporting-architecture">
+
+                    <div>
+
+                        <span>REPORTING PRINCIPLE</span>
+
+                        <h3>
+                            Excel was the presentation layer,
+                            not the control layer
+                        </h3>
+
+                    </div>
+
+
+                    <div class="banking-reporting-components">
+
+                        <span>Power Query</span>
+
+                        <span>PivotTables</span>
+
+                        <span>PivotCharts</span>
+
+                        <span>Slicers</span>
+
+                        <span>KPI Cards</span>
+
+                        <span>Management Commentary</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RECOMMENDATIONS
+        ====================================================== -->
+
+        <section id="recommendations" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        MANAGEMENT RECOMMENDATIONS
+                    </span>
+
+                    <h2>
+                        What management should monitor next
+                    </h2>
+
+                    <p>
+                        The analysis identifies areas that warrant continued
+                        monitoring rather than unsupported causal conclusions.
+                    </p>
+
+                </div>
+
+
+                <div class="banking-recommendation-grid">
+
+
+                    <article>
+
+                        <span>01</span>
+
+                        <h3>
+                            Monitor the 2023 transaction decline
+                        </h3>
+
+                        <p>
+                            Transaction value fell by 1.8% in 2023. This is not
+                            large enough to establish deterioration, but future
+                            complete periods should be monitored to determine
+                            whether the decline persists.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>02</span>
+
+                        <h3>
+                            Track overdue exposure by both value and severity
+                        </h3>
+
+                        <p>
+                            Large Enterprise has the highest total overdue
+                            exposure, while Small Business has the highest
+                            average overdue loan value. Both measures should be
+                            retained in credit monitoring.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>03</span>
+
+                        <h3>
+                            Retain customer-without-account visibility
+                        </h3>
+
+                        <p>
+                            Customers without linked accounts should remain
+                            visible rather than being removed through inner
+                            joins, as this may identify dormant, incomplete or
+                            conversion opportunities for further investigation.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <span>04</span>
+
+                        <h3>
+                            Preserve reporting-grain controls
+                        </h3>
+
+                        <p>
+                            Account, transaction and loan measures should
+                            continue to be calculated at their correct source
+                            grain before cross-table analysis to prevent
+                            inflated management totals.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             BUSINESS OUTCOMES
+        ====================================================== -->
+
+        <section id="project-outcomes" class="banking-section">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading">
+
+                    <span class="banking-section-label">
+                        BUSINESS OUTCOMES
+                    </span>
+
+                    <h2>
+                        What the project delivered
+                    </h2>
+
+                </div>
+
+
+                <div class="banking-outcome-grid">
+
+
+                    <article>
+
+                        <h3>Trusted Reporting Base</h3>
+
+                        <p>
+                            Raw and clean populations were reconciled before
+                            management measures were produced.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Reusable Analytical Logic</h3>
+
+                        <p>
+                            Core management calculations were centralised in
+                            SQL views rather than rebuilt separately in Excel.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Controlled KPI Grain</h3>
+
+                        <p>
+                            Account balance, transaction and loan measures were
+                            calculated at the appropriate analytical grain.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Improved Risk Visibility</h3>
+
+                        <p>
+                            Overdue exposure was analysed by both total value
+                            and average loan severity.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Comparable Trend Reporting</h3>
+
+                        <p>
+                            2020–2023 was isolated as the valid like-for-like
+                            period rather than mixing incomplete later years.
+                        </p>
+
+                    </article>
+
+
+                    <article>
+
+                        <h3>Decision-Ready MI</h3>
+
+                        <p>
+                            The final Excel report translated technical analysis
+                            into executive, portfolio and operational views.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             LIMITATIONS
+        ====================================================== -->
+
+        <section id="limitations" class="banking-section banking-section-alt">
+
+            <div class="inner">
+
+
+                <div class="banking-section-heading banking-section-heading-small">
+
+                    <span class="banking-section-label">
+                        ANALYTICAL LIMITATIONS
+                    </span>
+
+                    <h2>
+                        Interpreting the findings responsibly
+                    </h2>
+
+                </div>
+
+
+                <div class="banking-limitations">
+
+                    <p>
+                        The project uses a synthetic banking dataset and the
+                        findings therefore demonstrate analytical methodology
+                        rather than real-bank performance.
+                    </p>
+
+                    <p>
+                        Overdue loan status is reported as <strong>overdue
+                        exposure</strong> and is not treated as default.
+                    </p>
+
+                    <p>
+                        The analysis identifies patterns and concentrations but
+                        does not establish causality.
+                    </p>
+
+                    <p>
+                        2024 onward was excluded from comparable trend analysis
+                        because the available observations were materially
+                        incomplete.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FINAL PROJECT SUMMARY
+        ====================================================== -->
+
+        <section class="banking-project-close">
+
+            <div class="inner">
+
+                <div class="banking-project-close-grid">
+
+                    <div>
+
+                        <span>
+                            PROJECT TAKEAWAY
+                        </span>
+
+                        <h2>
+                            Reliable management information starts
+                            before the dashboard
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        The strongest outcome from this project was not simply
+                        the final Excel report. It was the creation of a
+                        controlled analytical process in which source quality,
+                        reporting grain, reusable SQL logic and presentation
+                        were deliberately separated. That made the final
+                        management information easier to trust, interpret and
+                        reuse.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
+    <footer id="footer">
+
+        <section>
+
+            <h3>
+                Banking Operations &amp; Portfolio Performance
+            </h3>
+
+            <p>
+                MySQL · Excel · Power Query · Management Information
+            </p>
+
+        </section>
+
+    </footer>
+
+
+    <!-- =========================================================
+         SCRIPTS
+    ========================================================== -->
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+
+    <script src="assets/js/breakpoints.min.js"></script>
+
+    <script src="assets/js/util.js"></script>
+
+    <script src="assets/js/main.js"></script>
+
+
+</body>
+
+</html>
