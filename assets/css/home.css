@@ -2563,3 +2563,7 @@ body.home-page .portfolio-hero-skills span:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 155, 145, 0.22);
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
