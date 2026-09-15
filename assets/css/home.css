@@ -2758,3 +2758,196 @@ strong {
         padding-top: 2rem !important;
     }
 }
+/* =================================================
+   HOME — ABOUT HEADSHOT
+================================================== */
+
+.portfolio-about-grid {
+    display: grid !important;
+    grid-template-columns:
+        minmax(230px, 320px)
+        minmax(0, 1fr) !important;
+    align-items: start !important;
+    column-gap: clamp(3rem, 6vw, 6rem) !important;
+    row-gap: 1.5rem !important;
+}
+
+.portfolio-about-photo {
+    position: relative;
+    grid-column: 1 !important;
+    grid-row: 1 / span 2 !important;
+    width: 100% !important;
+    max-width: 320px !important;
+    margin: 0 !important;
+}
+
+.portfolio-about-photo img {
+    display: block !important;
+    width: 100% !important;
+    aspect-ratio: 4 / 5 !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    border-radius: 10px !important;
+}
+
+.portfolio-about-photo::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 42%;
+    height: 42%;
+    border-right: 3px solid #43b02a;
+    border-bottom: 3px solid #43b02a;
+    border-radius: 0 0 10px 0;
+    pointer-events: none;
+}
+
+/* Heading column */
+
+.portfolio-about-grid > div:not(.portfolio-about-copy) {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    align-self: end !important;
+}
+
+/* Narrative column */
+
+.portfolio-about-grid .portfolio-about-copy {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    margin: 0 !important;
+    align-self: start !important;
+}
+
+/* Tablet and mobile */
+
+@media screen and (max-width: 736px) {
+    .portfolio-about-grid {
+        grid-template-columns: 1fr !important;
+        row-gap: 2rem !important;
+    }
+
+    .portfolio-about-photo {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        width: min(78%, 280px) !important;
+        margin: 0 auto !important;
+    }
+
+    .portfolio-about-grid > div:not(.portfolio-about-copy) {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+        align-self: auto !important;
+    }
+
+    .portfolio-about-grid .portfolio-about-copy {
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+        max-width: none !important;
+    }
+}
+.portfolio-about-grid > div:not(.portfolio-about-copy) {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    align-self: end !important;
+    justify-self: start !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.portfolio-about-grid .portfolio-about-copy {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    width: 100% !important;
+    max-width: 760px !important;
+    margin: 0 !important;
+    align-self: start !important;
+    justify-self: start !important;
+}
+/* =================================================
+   HOME — TEXT READABILITY
+================================================== */
+
+:root {
+    --home-body-text: #405168;
+    --home-secondary-text: #526279;
+    --home-dark-panel-text: #d4dce8;
+}
+
+/* Hero introduction */
+
+.portfolio-hero-copy .portfolio-hero-intro {
+    color: var(--home-body-text) !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    opacity: 1 !important;
+}
+
+/* Analytical Focus — navy panel */
+
+[class*="focus"] p,
+[class*="focus"] small {
+    color: var(--home-dark-panel-text) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    line-height: 1.55 !important;
+    opacity: 1 !important;
+}
+
+/* Professional Snapshot introduction */
+
+[class*="snapshot"] p {
+    color: var(--home-body-text) !important;
+    font-size: 0.96rem !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    opacity: 1 !important;
+}
+
+/* Descriptions beneath snapshot figures */
+
+[class*="metric"] p,
+[class*="metric"] small,
+[class*="stat"] p,
+[class*="stat"] small {
+    color: var(--home-secondary-text) !important;
+    font-size: 0.82rem !important;
+    font-weight: 500 !important;
+    line-height: 1.45 !important;
+    opacity: 1 !important;
+}
+
+/* Project descriptions */
+
+[class*="project"] p {
+    color: var(--home-body-text) !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    line-height: 1.65 !important;
+    opacity: 1 !important;
+}
+
+/* Where I Add Analytical Value */
+
+[class*="capabil"] p,
+[class*="value"] p,
+[class*="skill"] p {
+    color: var(--home-body-text) !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    line-height: 1.55 !important;
+    opacity: 1 !important;
+}
+
+/* About narrative */
+
+.portfolio-about-copy p {
+    color: var(--home-body-text) !important;
+    font-size: 0.96rem !important;
+    font-weight: 500 !important;
+    line-height: 1.7 !important;
+    opacity: 1 !important;
+}
