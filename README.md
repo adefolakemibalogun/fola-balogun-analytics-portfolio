@@ -49,6 +49,8 @@ The completed solution provides a trusted reporting foundation, preserves custom
 
 [View the Banking Operations case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)
 
+[Download the Banking analysis workbook](Files/Banking%20operations%20mi.xlsx)
+
 ---
 
 ### 2. Maven Market Management Information
@@ -85,6 +87,8 @@ The project delivers an integrated management-information framework that connect
 
 [View the Maven Market case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/management-information.html)
 
+[Download the Maven Power BI report](Files/Power-BI/maven-market-management-information.pbix)
+
 ---
 
 ### 3. Evolve Production Intelligence
@@ -118,6 +122,8 @@ The project transformed operational production data into three purpose-led Power
 The completed solution creates a structured route from field position to production sustainability, concentration risk, fluid-management exposure and targeted well-level investigation. It supports operational prioritisation while clearly separating analytical indicators from engineering diagnosis.
 
 [View the Evolve Production Intelligence case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/evolve.html)
+
+[Download the Evolve Power BI report](Files/Evolve%20Production%20Intelligence.pbix)
 
 ## Portfolio Business Value
 
