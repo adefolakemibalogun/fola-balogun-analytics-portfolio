@@ -28218,6 +28218,101 @@ html body.evolve-page
     line-height: 1.6 !important;
 }
 
+/* =================================================
+   EVOLVE — ANALYTICAL LIMITATIONS
+================================================== */
+
+html body.evolve-page #evolve-limitations {
+    background: var(--evolve-grey) !important;
+}
+
+html body.evolve-page .evolve-limitations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+html body.evolve-page .evolve-limitation-card {
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    align-items: start;
+    gap: 1.25rem;
+    min-height: 9rem;
+    padding: 1.75rem;
+    background: var(--evolve-white) !important;
+    border: 1px solid var(--evolve-border) !important;
+    border-radius: 0.8rem;
+    box-shadow: none !important;
+}
+
+html body.evolve-page .evolve-limitation-card > span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: var(--evolve-green-dark) !important;
+    background: rgba(67, 176, 42, 0.1) !important;
+    border: 1px solid rgba(67, 176, 42, 0.2) !important;
+    border-radius: 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+html body.evolve-page .evolve-limitation-card p {
+    margin: 0 !important;
+    color: var(--evolve-text-soft) !important;
+    font-size: 0.95rem;
+    line-height: 1.75;
+}
+
+/* Responsive layout */
+
+@media screen and (max-width: 980px) {
+    html body.evolve-page .evolve-limitations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    html body.evolve-page .evolve-limitations-grid {
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+    html body.evolve-page .evolve-limitation-card {
+        grid-template-columns: 2.5rem minmax(0, 1fr);
+        gap: 1rem;
+        min-height: 0;
+        padding: 1.35rem;
+    }
+
+    html body.evolve-page .evolve-limitation-card > span {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+/* Reduce spacing between Findings and Limitations */
+
+html body.evolve-page #evolve-findings {
+    padding-bottom: 48px !important;
+}
+
+html body.evolve-page #evolve-limitations {
+    padding-top: 56px !important;
+}
+@media screen and (max-width: 736px) {
+    html body.evolve-page #evolve-findings {
+        padding-bottom: 32px !important;
+    }
+
+    html body.evolve-page #evolve-limitations {
+        padding-top: 40px !important;
+    }
+}
+
 /* =========================================================
    15 — TECHNICAL SKILLS
    ========================================================= */
@@ -30867,4 +30962,696 @@ html body.maven-page
     background: #8bd146 !important;
 
     color: #10213f !important;
+}
+/* =========================================================
+   MAVEN — CROSS-PACK MANAGEMENT SYNTHESIS
+   Extends the original Maven design system
+========================================================= */
+
+
+/* The original Maven CSS already controls:
+   - section background
+   - alternating white treatment
+   - global .inner width
+   - header typography
+   - section spacing
+
+   Therefore, none of those foundations are overridden here.
+*/
+
+
+/* =========================================================
+   CROSS-PACK FINDINGS
+========================================================= */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-card {
+    position: relative !important;
+
+    display: grid !important;
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    gap: 20px !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 30px !important;
+
+    background: #f4f7f6 !important;
+
+    border: 1px solid #d8e1e3 !important;
+    border-radius: 4px !important;
+
+    box-shadow: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-number {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #006747 !important;
+    background: #ffffff !important;
+
+    font-family: inherit !important;
+    font-size: 0.82rem !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-label {
+    display: block !important;
+
+    margin: 0 0 8px !important;
+
+    color: #006747 !important;
+
+    font-family: inherit !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.12em !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-card h3 {
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+
+    color: #172445 !important;
+    -webkit-text-fill-color: #172445 !important;
+
+    font-family: inherit !important;
+    font-size: 1.18rem !important;
+    font-weight: 800 !important;
+    letter-spacing: normal !important;
+    line-height: 1.35 !important;
+    text-transform: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-card > div > p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #566579 !important;
+    -webkit-text-fill-color: #566579 !important;
+
+    font-family: inherit !important;
+    font-size: 0.93rem !important;
+    line-height: 1.7 !important;
+}
+
+
+/* Management implication follows the original Maven
+   action treatment: divider rather than a nested coloured box */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-implication {
+    margin: 15px 0 0 !important;
+    padding: 14px 0 0 !important;
+
+    background: transparent !important;
+
+    border: 0 !important;
+    border-top: 1px solid #d4dfe1 !important;
+    border-radius: 0 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-implication strong {
+    display: block !important;
+
+    margin: 0 0 7px !important;
+
+    color: #006747 !important;
+    -webkit-text-fill-color: #006747 !important;
+
+    font-family: inherit !important;
+    font-size: 0.72rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.1em !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusion-implication p {
+    margin: 0 !important;
+
+    color: #34465b !important;
+    -webkit-text-fill-color: #34465b !important;
+
+    font-family: inherit !important;
+    font-size: 0.93rem !important;
+    line-height: 1.7 !important;
+}
+
+
+/* =========================================================
+   RECOMMENDED ACTIONS
+   Presented as Maven cards—not another dark block
+========================================================= */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-actions {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 54px 0 0 !important;
+    padding: 0 !important;
+
+    color: #172445 !important;
+    background: transparent !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-actions-heading {
+    max-width: 1050px !important;
+
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-actions-heading > span {
+    display: block !important;
+
+    margin: 0 0 12px !important;
+
+    color: #006747 !important;
+    -webkit-text-fill-color: #006747 !important;
+
+    font-family: inherit !important;
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.16em !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-actions-heading h3 {
+    max-width: 950px !important;
+
+    margin: 0 0 16px !important;
+    padding: 0 !important;
+
+    color: #172445 !important;
+    -webkit-text-fill-color: #172445 !important;
+
+    font-family: inherit !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: normal !important;
+    line-height: 1.18 !important;
+    text-transform: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-actions-heading p {
+    max-width: 930px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #566579 !important;
+    -webkit-text-fill-color: #566579 !important;
+
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    line-height: 1.75 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-action-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    list-style: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-action-list li {
+    display: grid !important;
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    gap: 20px !important;
+    align-items: start !important;
+
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 30px !important;
+
+    background: #f4f7f6 !important;
+
+    border: 1px solid #d8e1e3 !important;
+    border-radius: 4px !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-action-list li > span {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 42px !important;
+    height: 42px !important;
+
+    margin: 0 !important;
+
+    color: #006747 !important;
+    -webkit-text-fill-color: #006747 !important;
+
+    background: #ffffff !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    font-family: inherit !important;
+    font-size: 0.82rem !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-action-list p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #566579 !important;
+    -webkit-text-fill-color: #566579 !important;
+
+    font-family: inherit !important;
+    font-size: 0.93rem !important;
+    line-height: 1.7 !important;
+}
+
+
+/* Make the fifth recommendation span both columns */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-action-list li:last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+}
+
+
+/* =========================================================
+   ANALYTICAL INTERPRETATION
+========================================================= */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-caution {
+    margin: 54px 0 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-caution > .section-label {
+    display: block !important;
+
+    margin: 0 0 12px !important;
+
+    color: #006747 !important;
+
+    font-family: inherit !important;
+    font-size: 0.78rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.16em !important;
+    text-transform: uppercase !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-caution > h3 {
+    max-width: 950px !important;
+
+    margin: 0 0 30px !important;
+    padding: 0 !important;
+
+    color: #172445 !important;
+    -webkit-text-fill-color: #172445 !important;
+
+    font-family: inherit !important;
+    font-size: 2rem !important;
+    font-weight: 800 !important;
+    letter-spacing: normal !important;
+    line-height: 1.18 !important;
+    text-transform: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-caution-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-caution-grid p {
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 30px !important;
+
+    color: #566579 !important;
+    -webkit-text-fill-color: #566579 !important;
+
+    background: #f4f7f6 !important;
+
+    border: 1px solid #d8e1e3 !important;
+    border-radius: 4px !important;
+
+    font-family: inherit !important;
+    font-size: 0.93rem !important;
+    line-height: 1.7 !important;
+}
+
+
+/* Remove the circular exclamation icons introduced previously */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-caution-grid p::before {
+    display: none !important;
+    content: none !important;
+}
+
+
+/* =========================================================
+   MANAGEMENT INFORMATION OUTCOME
+   Matches the original Maven summary panel
+========================================================= */
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-summary {
+    display: block !important;
+
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+
+    margin: 28px 0 0 !important;
+    padding: 32px 38px !important;
+
+    color: #34465b !important;
+    background: #ffffff !important;
+
+    border: 1px solid #d8e1e3 !important;
+    border-left: 5px solid #43b02a !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-summary > span {
+    display: block !important;
+
+    margin: 0 0 12px !important;
+    padding: 0 !important;
+
+    color: #006747 !important;
+    -webkit-text-fill-color: #006747 !important;
+
+    font-family: inherit !important;
+    font-size: 0.74rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.13em !important;
+    line-height: 1.5 !important;
+    text-transform: uppercase !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-summary h3 {
+    display: block !important;
+
+    max-width: 1000px !important;
+
+    margin: 0 0 14px !important;
+    padding: 0 !important;
+
+    color: #172445 !important;
+    -webkit-text-fill-color: #172445 !important;
+
+    font-family: inherit !important;
+    font-size: 1.35rem !important;
+    font-weight: 800 !important;
+    letter-spacing: normal !important;
+    line-height: 1.35 !important;
+    text-transform: none !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-summary p {
+    display: block !important;
+
+    max-width: 1150px !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    color: #34465b !important;
+    -webkit-text-fill-color: #34465b !important;
+
+    font-family: inherit !important;
+    font-size: 1rem !important;
+    line-height: 1.8 !important;
+}
+
+
+html body.maven-page
+#management-conclusions
+.maven-conclusions-summary strong {
+    color: #172445 !important;
+    -webkit-text-fill-color: #172445 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE — MATCHES EXISTING MAVEN BREAKPOINTS
+========================================================= */
+
+@media screen and (max-width: 980px) {
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-grid,
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-action-list,
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-caution-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-action-list
+    li:last-child:nth-child(odd) {
+        grid-column: auto !important;
+    }
+}
+
+
+@media screen and (max-width: 736px) {
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusion-card,
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-action-list li {
+        grid-template-columns: 42px minmax(0, 1fr) !important;
+        gap: 16px !important;
+
+        padding: 24px !important;
+    }
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-caution-grid p {
+        padding: 24px !important;
+    }
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-summary {
+        padding: 28px !important;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusion-card,
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-action-list li {
+        grid-template-columns: 1fr !important;
+    }
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-actions-heading h3,
+
+    html body.maven-page
+    #management-conclusions
+    .maven-conclusions-caution > h3 {
+        font-size: 1.65rem !important;
+    }
+}
+/* =========================================================
+   MANAGEMENT CONCLUSIONS — FULL-WIDTH WHITE SECTION BAND
+========================================================= */
+
+html body.maven-page
+#management-conclusions.maven-conclusions-section {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 68px 0 72px !important;
+
+    background: #ffffff !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+
+    /*
+       Extend only the white background across the viewport.
+       Content remains on Maven's existing 1600px grid.
+    */
+    box-shadow: 0 0 0 100vmax #ffffff !important;
+    clip-path: inset(0 -100vmax) !important;
+}
+/* =========================================================
+   PROJECT OUTCOMES — FULL-WIDTH SECTION BAND
+========================================================= */
+
+html body.maven-page
+#project-outcomes.maven-outcomes-section {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 92px 0 104px !important;
+
+    background: #f4f7f6 !important;
+
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+/* =========================================================
+   PROJECT OUTCOMES → CHALLENGES
+   Reduce duplicated vertical section spacing
+========================================================= */
+
+html body.maven-page #project-outcomes {
+    padding-bottom: 48px !important;
+}
+
+html body.maven-page #challenges-solutions {
+    padding-top: 56px !important;
 }

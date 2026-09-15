@@ -2579,3 +2579,182 @@ html {
     inset: 0;
     z-index: 2;
 }
+/* =========================================================
+   MAVEN CONCLUSIONS — LAYOUT CORRECTIONS
+   Must remain below the previous conclusions CSS
+========================================================= */
+
+
+/* Alternate from the preceding Geographic section */
+
+#management-conclusions.maven-conclusions-section {
+    padding: 7rem 0 !important;
+    background: #ffffff !important;
+}
+
+
+/* Remove inherited container/block appearance */
+
+#management-conclusions > .inner {
+    width: min(88rem, calc(100% - 3rem)) !important;
+    max-width: 88rem !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* Keep findings visually separate without enclosing everything */
+
+#management-conclusions .maven-conclusion-card {
+    background: #f7faf9 !important;
+    border: 1px solid #d6e3df !important;
+    box-shadow: 0 0.8rem 2rem rgba(16, 35, 66, 0.05) !important;
+}
+
+
+/* =========================================================
+   RECOMMENDED ACTIONS — LIGHT MANAGEMENT PANEL
+========================================================= */
+
+#management-conclusions .maven-conclusions-actions {
+    color: #102342 !important;
+    background: #edf7ed !important;
+    border: 1px solid #cfe2cd !important;
+    box-shadow: 0 1rem 2.5rem rgba(16, 35, 66, 0.07) !important;
+}
+
+#management-conclusions
+.maven-conclusions-actions-heading
+> span {
+    color: #087d70 !important;
+    -webkit-text-fill-color: #087d70 !important;
+}
+
+#management-conclusions
+.maven-conclusions-actions-heading
+h3 {
+    color: #102342 !important;
+    -webkit-text-fill-color: #102342 !important;
+}
+
+#management-conclusions
+.maven-conclusions-actions-heading
+p {
+    color: #60718b !important;
+    -webkit-text-fill-color: #60718b !important;
+}
+
+#management-conclusions
+.maven-conclusions-action-list
+li {
+    border-bottom: 1px solid #ccddd7 !important;
+}
+
+#management-conclusions
+.maven-conclusions-action-list
+li:last-child {
+    border-bottom: 0 !important;
+}
+
+#management-conclusions
+.maven-conclusions-action-list
+li > span {
+    color: #087d70 !important;
+    -webkit-text-fill-color: #087d70 !important;
+    background: #ffffff !important;
+    border-color: #bcd8cf !important;
+}
+
+#management-conclusions
+.maven-conclusions-action-list
+p {
+    color: #344961 !important;
+    -webkit-text-fill-color: #344961 !important;
+}
+
+
+/* =========================================================
+   MANAGEMENT INFORMATION OUTCOME — REMOVE LARGE EMPTY SPACE
+========================================================= */
+
+#management-conclusions .maven-conclusions-summary {
+    display: block !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin-top: 4rem !important;
+    padding: 2.5rem 0 0 !important;
+    color: #102342 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-top: 1px solid #cfdeda !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+#management-conclusions
+.maven-conclusions-summary
+> span {
+    display: block !important;
+    margin: 0 0 0.8rem !important;
+    padding: 0 !important;
+    color: #087d70 !important;
+    -webkit-text-fill-color: #087d70 !important;
+}
+
+#management-conclusions
+.maven-conclusions-summary
+h3 {
+    display: block !important;
+    max-width: 55rem !important;
+    margin: 0 0 1rem !important;
+    padding: 0 !important;
+    color: #102342 !important;
+    -webkit-text-fill-color: #102342 !important;
+    font-size: clamp(2rem, 4vw, 3.2rem) !important;
+    line-height: 1.08 !important;
+}
+
+#management-conclusions
+.maven-conclusions-summary
+p {
+    display: block !important;
+    max-width: 68rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #526781 !important;
+    -webkit-text-fill-color: #526781 !important;
+    font-size: 0.97rem !important;
+    line-height: 1.8 !important;
+}
+
+#management-conclusions
+.maven-conclusions-summary
+strong {
+    color: #102342 !important;
+    -webkit-text-fill-color: #102342 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE CORRECTIONS
+========================================================= */
+
+@media screen and (max-width: 736px) {
+
+    #management-conclusions.maven-conclusions-section {
+        padding: 4.5rem 0 !important;
+    }
+
+    #management-conclusions > .inner {
+        width: min(100% - 2rem, 88rem) !important;
+    }
+
+    #management-conclusions .maven-conclusions-summary {
+        margin-top: 3rem !important;
+        padding-top: 2rem !important;
+    }
+}
