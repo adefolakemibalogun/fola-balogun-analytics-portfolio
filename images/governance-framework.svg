@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1110" viewBox="0 0 1440 1110" font-family="Helvetica, Arial, sans-serif">
+  <rect width="1440" height="1110" fill="#edf4f2"/>
+  <g transform="translate(0,170)">
+  <rect x="40" y="40" width="1360" height="860" rx="22" fill="#ffffff" stroke="#d6e4e0" stroke-width="2"/>
+
+  <!-- header -->
+  <rect x="40" y="40" width="1360" height="120" rx="22" fill="#0d1f3c"/>
+  <rect x="40" y="120" width="1360" height="40" fill="#0d1f3c"/>
+  <text x="90" y="98" fill="#ffffff" font-size="38" font-weight="700">Banking Data Governance Framework</text>
+  <text x="90" y="138" fill="#9fd8dd" font-size="22" letter-spacing="2">DATA-QUALITY SCORECARD · SYNTHETIC BANK · REPORTING DATE 31 DEC 2023</text>
+
+  <!-- KPI tiles -->
+  <g font-weight="700">
+    <rect x="90" y="200" width="290" height="140" rx="16" fill="#f3f8f7" stroke="#d6e4e0" stroke-width="2"/>
+    <text x="120" y="275" fill="#0d1f3c" font-size="60">20</text>
+    <text x="120" y="315" fill="#5b6b7a" font-size="22" font-weight="400">rules measured</text>
+
+    <rect x="410" y="200" width="290" height="140" rx="16" fill="#eef8ea" stroke="#bfe3ad" stroke-width="2"/>
+    <text x="440" y="275" fill="#3f8f1f" font-size="60">8</text>
+    <text x="440" y="315" fill="#5b6b7a" font-size="22" font-weight="400">pass</text>
+
+    <rect x="730" y="200" width="290" height="140" rx="16" fill="#fdf0ef" stroke="#f1c4bf" stroke-width="2"/>
+    <text x="760" y="275" fill="#c0392b" font-size="60">11</text>
+    <text x="760" y="315" fill="#5b6b7a" font-size="22" font-weight="400">fail · 10 owned issues</text>
+
+    <rect x="1050" y="200" width="300" height="140" rx="16" fill="#f3f8f7" stroke="#d6e4e0" stroke-width="2"/>
+    <text x="1080" y="275" fill="#0e7c86" font-size="60">17</text>
+    <text x="1080" y="315" fill="#5b6b7a" font-size="22" font-weight="400">critical data elements</text>
+  </g>
+
+  <!-- rules by dimension -->
+  <text x="90" y="400" fill="#0e7c86" font-size="20" font-weight="700" letter-spacing="2">RULES BY QUALITY DIMENSION</text>
+  <g font-size="24" fill="#0d1f3c">
+    <text x="90" y="452">Uniqueness</text>
+    <text x="90" y="507">Referential integrity</text>
+    <text x="90" y="562">Validity</text>
+    <text x="90" y="617">Consistency</text>
+    <text x="90" y="672">Completeness</text>
+    <text x="90" y="727">Timeliness</text>
+    <text x="90" y="782">Conformity</text>
+  </g>
+  <!-- squares: green = pass, red = fail, teal outline = monitor -->
+  <g>
+    <!-- Uniqueness 2/2 -->
+    <rect x="370" y="428" width="34" height="34" rx="6" fill="#5cb030"/><rect x="414" y="428" width="34" height="34" rx="6" fill="#5cb030"/>
+    <!-- Referential 1/1 -->
+    <rect x="370" y="483" width="34" height="34" rx="6" fill="#5cb030"/>
+    <!-- Validity 2/4 -->
+    <rect x="370" y="538" width="34" height="34" rx="6" fill="#5cb030"/><rect x="414" y="538" width="34" height="34" rx="6" fill="#5cb030"/><rect x="458" y="538" width="34" height="34" rx="6" fill="#d9534f"/><rect x="502" y="538" width="34" height="34" rx="6" fill="#d9534f"/>
+    <!-- Consistency 3/6 -->
+    <rect x="370" y="593" width="34" height="34" rx="6" fill="#5cb030"/><rect x="414" y="593" width="34" height="34" rx="6" fill="#5cb030"/><rect x="458" y="593" width="34" height="34" rx="6" fill="#5cb030"/><rect x="502" y="593" width="34" height="34" rx="6" fill="#d9534f"/><rect x="546" y="593" width="34" height="34" rx="6" fill="#d9534f"/><rect x="590" y="593" width="34" height="34" rx="6" fill="#d9534f"/>
+    <!-- Completeness 0/3 + 1 monitor -->
+    <rect x="370" y="648" width="34" height="34" rx="6" fill="#d9534f"/><rect x="414" y="648" width="34" height="34" rx="6" fill="#d9534f"/><rect x="458" y="648" width="34" height="34" rx="6" fill="#d9534f"/><rect x="503" y="649" width="32" height="32" rx="6" fill="#ffffff" stroke="#0e7c86" stroke-width="3"/>
+    <!-- Timeliness 0/2 -->
+    <rect x="370" y="703" width="34" height="34" rx="6" fill="#d9534f"/><rect x="414" y="703" width="34" height="34" rx="6" fill="#d9534f"/>
+    <!-- Conformity 0/1 -->
+    <rect x="370" y="758" width="34" height="34" rx="6" fill="#d9534f"/>
+  </g>
+  <g font-size="18" fill="#5b6b7a">
+    <rect x="90" y="826" width="18" height="18" rx="4" fill="#5cb030"/><text x="116" y="841">Pass</text>
+    <rect x="180" y="826" width="18" height="18" rx="4" fill="#d9534f"/><text x="206" y="841">Fail</text>
+    <rect x="261" y="827" width="16" height="16" rx="4" fill="#ffffff" stroke="#0e7c86" stroke-width="3"/><text x="286" y="841">Monitor</text>
+  </g>
+
+  <!-- top issues -->
+  <line x1="700" y1="390" x2="700" y2="850" stroke="#e3ecea" stroke-width="2"/>
+  <text x="740" y="400" fill="#0e7c86" font-size="20" font-weight="700" letter-spacing="2">TOP OWNED ISSUES</text>
+  <g>
+    <rect x="740" y="425" width="610" height="92" rx="12" fill="#fdf5f4"/>
+    <rect x="740" y="425" width="8" height="92" rx="4" fill="#c0392b"/>
+    <text x="770" y="463" fill="#0d1f3c" font-size="26" font-weight="700">£4.29M in 74 closed accounts</text>
+    <text x="770" y="497" fill="#5b6b7a" font-size="20">Closure process doesn't sweep balances · Retail Ops</text>
+
+    <rect x="740" y="533" width="610" height="92" rx="12" fill="#fdf5f4"/>
+    <rect x="740" y="533" width="8" height="92" rx="4" fill="#c0392b"/>
+    <text x="770" y="571" fill="#0d1f3c" font-size="26" font-weight="700">48 "Active" loans past maturity</text>
+    <text x="770" y="605" fill="#5b6b7a" font-size="20">£2.44M · overdue exposure may be understated · Credit Risk</text>
+
+    <rect x="740" y="641" width="610" height="92" rx="12" fill="#fdf5f4"/>
+    <rect x="740" y="641" width="8" height="92" rx="4" fill="#c0392b"/>
+    <text x="770" y="679" fill="#0d1f3c" font-size="26" font-weight="700">990 transactions with no date</text>
+    <text x="770" y="713" fill="#5b6b7a" font-size="20">£2.47M can't be assigned to a period · Payments Ops</text>
+
+    <rect x="740" y="749" width="610" height="92" rx="12" fill="#eef8ea"/>
+    <rect x="740" y="749" width="8" height="92" rx="4" fill="#5cb030"/>
+    <text x="770" y="787" fill="#0d1f3c" font-size="26" font-weight="700">Every loan links to a real account</text>
+    <text x="770" y="821" fill="#5b6b7a" font-size="20">Referential integrity 100% · control working</text>
+  </g>
+  </g>
+</svg>
