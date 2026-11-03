@@ -2,7 +2,7 @@
 
 CDMP-certified data governance and data quality professional (DAMA International) with 10+ years across Nigerian commercial banking and UK & EMEA operations. I turn operational data into controlled, trusted management information that helps decision-makers understand performance, identify material exceptions, investigate underlying drivers and prioritise action.
 
-This portfolio presents end-to-end business intelligence projects across banking operations, retail management information and oil and gas production. Each case study moves beyond dashboard construction to demonstrate business understanding, data preparation, analytical modelling, evidence-based findings and practical management recommendations.
+This portfolio presents end-to-end data quality, controls and analytics case studies across banking, retail and oil and gas production. Each case study moves beyond dashboard construction to demonstrate business understanding, data preparation, analytical modelling, evidence-based findings and practical management recommendations.
 
 ## View the Live Portfolio
 
@@ -12,13 +12,13 @@ This portfolio presents end-to-end business intelligence projects across banking
 
 | Project                                                                                                                                  | Business problem                                                                                                                              | Management outcome                                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| [Banking Operations](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)                      | Management required a reliable view of transaction performance, customer coverage and lending exposure without distorted portfolio totals.    | A controlled reporting framework supporting transaction monitoring, overdue-exposure review and customer-level investigation.         |
+| [Banking Data Quality & Portfolio Performance](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)                      | Management required a reliable view of transaction performance, customer coverage and lending exposure without distorted portfolio totals.    | A controlled reporting framework supporting transaction monitoring, overdue-exposure review and customer-level investigation.         |
 | [Maven Market Management Information](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/management-information.html) | Strong headline retail performance did not explain where results originated or whether returns and concentration weakened commercial quality. | An integrated management-information solution connecting executive results with customer, product and geographic performance drivers. |
 | [Volve Production Intelligence](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/evolve.html)                      | Cumulative field-production totals concealed production decline, well dependency and material water exposure.                                 | A structured analytical path from field position to well-level exceptions and operational priorities.                                 |
 
 ## Featured Projects
 
-### 1. Banking Operations and Management Reporting
+### 1. Banking Data Quality and Controlled Reporting
 
 > **Note:** This project uses a synthetic banking dataset. The findings demonstrate analytical and data-quality methodology, not real-bank performance.
 
@@ -49,7 +49,7 @@ The project established a controlled reporting process from raw banking data to 
 
 The completed solution provides a trusted reporting foundation, preserves customer visibility and analytical grain, and enables management to move from portfolio totals to targeted transaction and credit-risk investigation.
 
-[View the Banking Operations case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)
+[View the Banking Data Quality case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)
 
 [Download the Banking analysis workbook](Files/banking-operations-mi.xlsx)
 
@@ -142,18 +142,18 @@ Across the three projects, the portfolio demonstrates the ability to:
 
 ## Technical Capabilities
 
-* **Business intelligence:** Power BI, interactive reporting and dashboard design
-* **Data preparation:** Power Query, Excel and data-quality validation
-* **Data analysis:** SQL, DAX, trend analysis, variance analysis and exception reporting
-* **Data modelling:** Fact and dimension structures, relationships and calendar models
+* **Data governance:** critical data elements, ownership and stewardship, business definitions, metadata and lineage (Collibra, Microsoft Purview in professional work)
+* **Data quality and controls:** profiling, quality rules, reconciliation, referential integrity, exception ownership and root-cause analysis (SQL, SAS, Informatica Data Quality in professional work)
 * **Reporting control:** KPI reconciliation, analytical-grain management and reusable measures
-* **Business analysis:** Requirements definition, management interpretation and action planning
+* **Data preparation and modelling:** Power Query, Excel, fact and dimension structures, relationships and calendar models
+* **Reporting and analysis:** Power BI, DAX, trend, variance and exception reporting
+* **Business analysis:** requirements definition, management interpretation and action planning
 * **Web development:** HTML5, CSS3 and responsive portfolio design
 * **Version control:** Git and GitHub
 
-## Analytical Approach
+## Approach
 
-Each portfolio project follows a consistent decision-focused process:
+Each case study follows a consistent controls-first process:
 
 1. Define the business problem and management questions.
 2. Understand, clean and validate the source data.
