@@ -1,6 +1,6 @@
-# Fola Balogun | Business Intelligence & Data Analytics Portfolio
+# Adefolake (Fola) Balogun | Data Governance, Data Quality & Analytics Portfolio
 
-I transform operational data into controlled management information that helps decision-makers understand performance, identify material exceptions, investigate underlying drivers and prioritise action.
+CDMP-certified data governance and data quality professional (DAMA International) with 10+ years across Nigerian commercial banking and UK & EMEA operations. I turn operational data into controlled, trusted management information that helps decision-makers understand performance, identify material exceptions, investigate underlying drivers and prioritise action.
 
 This portfolio presents end-to-end business intelligence projects across banking operations, retail management information and oil and gas production. Each case study moves beyond dashboard construction to demonstrate business understanding, data preparation, analytical modelling, evidence-based findings and practical management recommendations.
 
@@ -14,11 +14,13 @@ This portfolio presents end-to-end business intelligence projects across banking
 | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | [Banking Operations](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)                      | Management required a reliable view of transaction performance, customer coverage and lending exposure without distorted portfolio totals.    | A controlled reporting framework supporting transaction monitoring, overdue-exposure review and customer-level investigation.         |
 | [Maven Market Management Information](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/management-information.html) | Strong headline retail performance did not explain where results originated or whether returns and concentration weakened commercial quality. | An integrated management-information solution connecting executive results with customer, product and geographic performance drivers. |
-| [Evolve Production Intelligence](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/evolve.html)                      | Cumulative field-production totals concealed production decline, well dependency and material water exposure.                                 | A structured analytical path from field position to well-level exceptions and operational priorities.                                 |
+| [Volve Production Intelligence](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/evolve.html)                      | Cumulative field-production totals concealed production decline, well dependency and material water exposure.                                 | A structured analytical path from field position to well-level exceptions and operational priorities.                                 |
 
 ## Featured Projects
 
 ### 1. Banking Operations and Management Reporting
+
+> **Note:** This project uses a synthetic banking dataset. The findings demonstrate analytical and data-quality methodology, not real-bank performance.
 
 #### Business Problem
 
@@ -30,7 +32,7 @@ The project established a controlled reporting process from raw banking data to 
 
 #### Key Findings
 
-* Transaction value declined by **1.8% in 2023** to approximately **£228.8 million**.
+* Transaction value declined by **1.8% in 2023** to approximately **£28.8 million**.
 * Overdue lending totalled approximately **£1.67 million**, representing **9.8%** of the **£17.09 million** loan portfolio.
 * Large Enterprise customers carried the highest total overdue exposure at approximately **£632,000**.
 * Small Business customers recorded the highest average overdue facility value at approximately **£59,000**.
@@ -49,7 +51,7 @@ The completed solution provides a trusted reporting foundation, preserves custom
 
 [View the Banking Operations case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/banking-operations.html)
 
-[Download the Banking analysis workbook](Files/Banking%20operations%20mi.xlsx)
+[Download the Banking analysis workbook](Files/banking-operations-mi.xlsx)
 
 ---
 
@@ -91,7 +93,7 @@ The project delivers an integrated management-information framework that connect
 
 ---
 
-### 3. Evolve Production Intelligence
+### 3. Volve Production Intelligence
 
 #### Business Problem
 
@@ -121,9 +123,9 @@ The project transformed operational production data into three purpose-led Power
 
 The completed solution creates a structured route from field position to production sustainability, concentration risk, fluid-management exposure and targeted well-level investigation. It supports operational prioritisation while clearly separating analytical indicators from engineering diagnosis.
 
-[View the Evolve Production Intelligence case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/evolve.html)
+[View the Volve Production Intelligence case study](https://adefolakemibalogun.github.io/fola-balogun-analytics-portfolio/evolve.html)
 
-[Download the Evolve Power BI report](Files/Evolve%20Production%20Intelligence.pbix)
+[Download the Volve Power BI report](Files/Evolve%20Production%20Intelligence.pbix)
 
 ## Portfolio Business Value
 
@@ -180,6 +182,6 @@ fola-balogun-analytics-portfolio/
 
 ## Author
 
-**Fola Balogun**
-Business Intelligence & Data Analyst
+**Adefolake (Fola) Balogun**
+Data Governance & Data Quality | CDMP
 
